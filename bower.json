@@ -1,0 +1,17 @@
+{
+    "name": "adapt-add-media-autoplay",
+    "repository": "",
+    "framework": "^1.0.0",
+    "version": "1.0.0",
+    "homepage": "",
+    "issues": "",
+    "displayName": "Adding media autoplay for Adapt",
+    "extension": "Adding media autoplay for Adapt",
+    "description": "Adding media autoplay for Adapt",
+    "main": "/js/adapt-add-media-autoplay.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3"
+}
