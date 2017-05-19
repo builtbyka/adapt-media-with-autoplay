@@ -15,8 +15,6 @@ define([
         if (!model.get("_autoPlay") && !model.get("_autoPlayOnce")) return;
         view._autoplay =  _.bind(autoplay, view);
         view.$el.on("inview", view._autoplay);
-        console.log(view, this);
-    
     });
 
     function autoplay(event, visible, visiblePartX, visiblePartY) {
