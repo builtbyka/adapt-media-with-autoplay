@@ -4,17 +4,11 @@ define([
 
     var counter = 0;
 
-    Adapt.on('componentView:preRender', function(view) {
-        var model = view.model;
-        if (!model.get("_autoPlay") && !model.get("_autoPlayOnce")) return;
-
-    });
-
     Adapt.on('componentView:postRender', function(view) {
         var model = view.model;
         if (!model.get("_autoPlay") && !model.get("_autoPlayOnce")) return;
         view._autoplay =  _.bind(autoplay, view);
-        view.$el.on("inview", view._autoplay);
+        view.$el.on("inview", view._autoplay);    
     });
 
     function autoplay(event, visible, visiblePartX, visiblePartY) {
